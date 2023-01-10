@@ -18,8 +18,13 @@ able to handle more than two inputs, inputs with different columns, and very lar
 files gracefully.
 
 ```
-$ ./csv-combiner.php ./fixtures/accessories.csv ./fixtures/clothing.csv > combined.csv
+$ python csv-combiner.py ./fixtures/accessories.csv ./fixtures/clothing.csv > combined.csv
 ```
+## Example
+This example is provided as one of the ways your UNIT TEST should run. It should also be
+able to handle more than two inputs, inputs with different columns, and very large (> 2GB) 
+files gracefully.
+python -m unittest test_csv_combiner.py 
 
 Given two input files named `clothing.csv` and `accessories.csv`.
 
