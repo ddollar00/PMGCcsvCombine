@@ -24,8 +24,10 @@ $ python csv-combiner.py ./fixtures/accessories.csv ./fixtures/clothing.csv > co
 This example is provided as one of the ways your UNIT TEST should run. It should also be
 able to handle more than two inputs, inputs with different columns, and very large (> 2GB) 
 files gracefully.
-python -m unittest test_csv_combiner.py 
 
+```
+python -m unittest test_csv_combiner.py 
+```
 Given two input files named `clothing.csv` and `accessories.csv`.
 
 |email_hash|category|
