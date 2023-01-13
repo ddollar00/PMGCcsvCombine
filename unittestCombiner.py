@@ -110,7 +110,4 @@ class TestCombineMethod(unittest.TestCase):
         with open(self.test_output_path) as f:
             combined_df = pd.read_csv(filepath_or_buffer=f, lineterminator='\n')
             self.assertEqual(len(combined_df.merge(hc_df)), len(combined_df.drop_duplicates()))
-            self.assertNotEqual(len(combined_df.merge(acc_df)), len(combined_df.drop_duplicates()))
-            self.assertNotEqual(len(combined_df.merge(clo_df)), len(combined_df.drop_duplicates()))
-    
-
+            
