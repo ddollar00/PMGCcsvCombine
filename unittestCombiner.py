@@ -34,7 +34,7 @@ class TestCombineMethod(unittest.TestCase):
         sys.stdout = self.output
         self.test_output = open(self.test_output_path, 'w+')
         
-    def breakd(self):
+    def tearDown(self):
         self.test_output.close()
         self.test_output = open(self.test_output_path, 'w+')
         sys.stdout = self.backup
